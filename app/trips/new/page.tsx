@@ -57,7 +57,7 @@ export default function NewTrip() {
                                     {" "}
                                     Start Date
                                 </label>
-                                <input type="date" name="start date" className={cn(
+                                <input type="date" name="startDate" className={cn(
                                     "w-full border border-gray-300 px-3 py-2",
                                     "rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                                     )} placeholder="Trip Title" />
@@ -67,7 +67,7 @@ export default function NewTrip() {
                                     {" "}
                                     End Date
                                 </label>
-                                <input type="date" name="end date" className={cn(
+                                <input type="date" name="endDate" className={cn(
                                     "w-full border border-gray-300 px-3 py-2",
                                     "rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                                     )} placeholder="Trip Title" />
@@ -101,6 +101,8 @@ export default function NewTrip() {
                         <Button type="submit" disabled={isPending} className="w-full">
                             {isPending ?"Creating.." : "Create Trip"}
                         </Button>
+
+                        
                     </form>
                 </CardContent>
             </Card>
