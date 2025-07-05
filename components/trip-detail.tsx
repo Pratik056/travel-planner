@@ -5,7 +5,6 @@ import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import { useState } from "react";
 import { Calendar, Plus } from "lucide-react";
-import Link from "next/link";
 
 interface TripDetailClientProps {
     trip:Trip;
